@@ -1,0 +1,83 @@
+.navBar {
+  width: 100%;
+  height: 3rem;
+  padding: 0rem 1rem;
+  background-color: #444;
+  border-bottom: 0.05rem solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navBar .navBar__logo a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.navBar .navBar__items {
+  display: flex;
+  align-items: center;
+}
+
+.navBar__items__burguer {
+  display: none;
+}
+
+.navBar .navBar__items__links a {
+  margin-left: 1rem;
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.navBar_Bg {
+  position: absolute;
+  background-color: #222;
+  top: -62rem;
+  left: -62rem;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+  .navBar .active {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 30%;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+
+  .navBar .active a {
+    margin-top: 1.2rem;
+  }
+
+  .navBar__items__links {
+    position: absolute;
+    top: -20rem;
+    left: -10rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .navBar__items__burguer {
+    display: block;
+  }
+
+  .Bg_active {
+    top: 3rem;
+    left: 0rem;
+    z-index: -1;
+    border-radius: 0 0 80% 0;
+    transition: 0.4s all ease;
+  }
+}
